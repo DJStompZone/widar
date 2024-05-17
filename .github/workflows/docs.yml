@@ -28,6 +28,11 @@ jobs:
       - name: Adjust Paths for GitHub Pages
         run: find target/doc -type f -name '*.html' -exec sed -i 's|\.\./|/widar/|g' {} +
 
+      - name: Adjust File Structure for GitHub Pages
+        run: | 
+          cp -r target/doc/static.files/ target/doc/widar/static.files/
+
+
       - name: (Debug) List Documentation Files
         run: ls -R target/doc
 
