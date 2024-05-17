@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
         with:
           fetch-depth: 0
           submodules: 'recursive'
@@ -23,8 +23,14 @@ jobs:
           components: rust-docs
 
       - name: Build Docs
-        run: cargo doc --no-deps --document-private-items --base-url https://djstompzone.github.io/widar
-        
+        run: cargo doc --no-deps --document-private-items
+
+      - name: Adjust Paths for GitHub Pages
+        run: find target/doc -type f -name '*.html' -exec sed -i 's|\.\./|/widar/|g' {} +
+
+      - name: (Debug) List Documentation Files
+        run: ls -R target/doc
+
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
