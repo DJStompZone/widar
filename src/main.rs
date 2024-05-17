@@ -1,6 +1,6 @@
 use clap::{Arg, Command};
 use colored::*;
-use prettytable::{cell, row, Table};
+use prettytable::{row, Table};
 use std::ops::Deref;
 use std::process;
 use tokio_wifiscanner as wifiscanner;
