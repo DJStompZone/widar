@@ -1,0 +1,5 @@
+var searchIndex = new Map(JSON.parse('[\
+["widar",{"doc":"","t":"FNNNNNHNNHHNHNNNNN","n":["NumSignalBars","borrow","borrow_mut","clone","clone_into","deref","estimate_distance","fmt","from","generate_bar","generate_signal_indicator","into","main","new","to_owned","try_from","try_into","type_id"],"q":[[0,"widar"],[18,"core::fmt"],[19,"core::fmt"],[20,"colored"],[21,"core::result"],[22,"core::any"]],"d":["","","","","","","","","Returns the argument unchanged.","Generates a bar representation of signal strength. …","","Calls <code>U::from(self)</code>.","","","","","",""],"i":[0,1,1,1,1,1,0,1,1,0,0,1,0,1,1,1,1,1],"f":"`{ce{}{}}0{bb}{{ce}d{}{}}{bc{}}{fh}{{bj}l}{cc{}}{{nnA`A`}Ab}{{fbff}Ad}8{{}d}{Afb}:{c{{Ah{e}}}{}{}}0{cAj{}}","c":[],"p":[[5,"NumSignalBars",0],[1,"unit"],[1,"i32"],[1,"f64"],[5,"Formatter",18],[8,"Result",18],[1,"usize"],[1,"char"],[5,"String",19],[5,"ColoredString",20],[1,"u8"],[6,"Result",21],[5,"TypeId",22]],"b":[]}]\
+]'));
+if (typeof exports !== 'undefined') exports.searchIndex = searchIndex;
+else if (window.initSearch) window.initSearch(searchIndex);
