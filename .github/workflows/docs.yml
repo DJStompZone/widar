@@ -23,8 +23,8 @@ jobs:
           components: rust-docs
 
       - name: Build Docs
-        run: cargo doc --no-deps
-
+        run: cargo doc --no-deps --document-private-items --base-url https://djstompzone.github.io/widar
+        
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
