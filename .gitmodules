@@ -1,0 +1,3 @@
+[submodule "tokio-wifiscanner"]
+	path = tokio-wifiscanner
+	url = https://github.com/djstompzone/tokio-wifiscanner
